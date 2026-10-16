@@ -19,7 +19,8 @@ money leaves the phone unless you choose to send or save it somewhere.
   from a bank or wallet app, only a template is kept for 7 days; see below).
 - **Gmail, if you connect it (optional), for each address you connect.** JAIB asks Gmail only for emails from the
   banks and wallets on its list, with read-only access, and reads them on your phone. Emails from before you connected are not counted as transactions;
-  JAIB only learns from them which accounts you have.
+  JAIB only learns from them which accounts you have. Nothing from these emails leaves the phone unless you send a
+  report yourself (see below).
 - **Files you pick**: an SMS backup you import, a JAIB backup you restore.
 - **What you type to the JAIB Assistant (optional)**: it is understood by a model that runs on your phone. What you
   type, and the Assistant's answers, never leave the phone.
@@ -50,7 +51,8 @@ money leaves the phone unless you choose to send or save it somewhere.
     deletes each file once read. Scanning the link code uses Google's code scanner, which may send Google usage counts
     for the scanner (never the code);
   - send a "wrong result" report or diagnostics from your own email app, to the JAIB team (ahmadsefik463@gmail.com).
-    You see exactly what is sent first and can untick any message. Messages are sent only as templates: the bank's
+    You see exactly what is sent first and can untick any message. Messages, including bank and wallet emails JAIB
+    read from your Gmail, are sent only as templates: the bank's
     wording with every name, amount, reference, account number, phone number, date, email and street address
     replaced (for example "Rs. {AMOUNT} sent to {NAME}"), with what JAIB did with them. They are used only to teach
     JAIB new message formats.
@@ -66,8 +68,11 @@ money leaves the phone unless you choose to send or save it somewhere.
 
 JAIB's use and transfer of information received from Google APIs to any other app will adhere to the
 [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the
-Limited Use requirements. Gmail data is read and processed on your phone only and is never sent to JAIB or anyone else.
-It is not used for advertising, not sold, and not read by people.
+Limited Use requirements. Gmail data is read and processed on your phone. It leaves the phone only when you choose to
+send a report to the JAIB team from your own email app: you see each bank or wallet email first, as a template with
+every name, amount, number and address replaced, and can untick it. The JAIB team reads only the templates you send,
+and only to teach JAIB new bank email formats. Gmail data is not used for advertising, not sold, not shared with
+anyone else, and not used to train AI models.
 
 ## Deleting your data
 
