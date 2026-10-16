@@ -1,0 +1,80 @@
+---
+title: JAIB privacy policy
+---
+
+# JAIB privacy policy
+
+Last updated: 17 October 2026 (beta).
+
+## In short
+
+JAIB keeps your money picture on your phone, encrypted. There is no JAIB account and no JAIB server. Nothing about your
+money leaves the phone unless you choose to send or save it somewhere.
+
+## What JAIB reads
+
+- **Bank and wallet notifications**, only from the apps on JAIB's list (banks, wallets, shops and email apps), after you
+  turn on notification access. Notifications from every other app are ignored the moment they arrive and never stored.
+  Chats, one-time passwords (OTPs) and promotions from listed apps are read in memory and dropped (of a promotion
+  from a bank or wallet app, only a template is kept for 7 days; see below).
+- **Gmail, if you connect it (optional), for each address you connect.** JAIB asks Gmail only for emails from the
+  banks and wallets on its list, with read-only access, and reads them on your phone. Emails from before you connected are not counted as transactions;
+  JAIB only learns from them which accounts you have.
+- **Files you pick**: an SMS backup you import, a JAIB backup you restore.
+- **What you type to the JAIB Assistant (optional)**: it is understood by a model that runs on your phone. What you
+  type, and the Assistant's answers, never leave the phone.
+
+## What JAIB keeps
+
+- What it read from each money message: amount, date, account, reference, the other side's name, and category.
+- The text of a message for 7 days (so you can check it), then only its fingerprint (a hash), never the text.
+- For a message from a bank or wallet app that JAIB did not count (a promotion, a notice, or one it could not read), a
+  template of it for 7 days (every name, amount, number and address replaced), so you can send it to help JAIB learn.
+  Never the message itself, never chats or one-time passwords.
+- Your accounts, balances, categories, rules and settings.
+- If you turn on "Help improve the Assistant" (off unless you turn it on): each request you typed, what the Assistant
+  understood and what you saved, so you can export it yourself to help train the Assistant. It stays on the phone,
+  encrypted, until you export or clear it.
+- Everything is encrypted on the phone with a key protected by Android's hardware keystore.
+
+## What leaves the phone
+
+- **Nothing financial**, unless you do one of these yourself:
+  - export a CSV or JSON file;
+  - make a backup file, encrypted with your passphrase (JAIB cannot open it without your passphrase or recovery key);
+  - if you turn it on, an automatic backup to your own Google Drive, in a hidden JAIB folder, encrypted on the phone
+    with your backup passphrase first (Google stores it but cannot read it; JAIB cannot see your other Drive files);
+  - if you link a second phone: what that phone read from each payment alert (amount, account, reference, the other
+    side, the alert's wording with names and numbers replaced), encrypted on the phone with a key only your two phones
+    have, through a hidden JAIB folder in your own Google Drive. Google stores it but cannot read it; the main phone
+    deletes each file once read. Scanning the link code uses Google's code scanner, which may send Google usage counts
+    for the scanner (never the code);
+  - send a "wrong result" report or diagnostics from your own email app, to the JAIB team (ahmadsefik463@gmail.com).
+    You see exactly what is sent first and can untick any message. Messages are sent only as templates: the bank's
+    wording with every name, amount, reference, account number, phone number, date, email and street address
+    replaced (for example "Rs. {AMOUNT} sent to {NAME}"), with what JAIB did with them. They are used only to teach
+    JAIB new message formats.
+- **The JAIB Assistant's model**: if you turn the Assistant on, JAIB downloads its model file once (about 500 MB, and
+  again only when you choose to update it) from the address in JAIB's model list (currently Hugging Face,
+  huggingface.co). The request is the same for everyone and carries nothing about you or your money.
+- **Exchange rates**: once a day JAIB downloads public currency rates (fawazahmed0/exchange-api through jsDelivr or
+  Cloudflare). The request is the same for everyone and carries nothing about you or your money.
+- **Google**: Gmail sign-in and access go through Google; Play may count crashes for users who share usage data with
+  developers. JAIB has no analytics or crash SDK.
+
+## Google API Services User Data Policy (Limited Use)
+
+JAIB's use and transfer of information received from Google APIs to any other app will adhere to the
+[Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the
+Limited Use requirements. Gmail data is read and processed on your phone only and is never sent to JAIB or anyone else.
+It is not used for advertising, not sold, and not read by people.
+
+## Deleting your data
+
+- **More > Settings > Delete all my data** removes every transaction, account, setting and key from the phone.
+- Uninstalling JAIB removes everything too.
+- Disconnecting Gmail (Settings > Sources) revokes JAIB's access; you can also remove it at myaccount.google.com.
+
+## Contact
+
+ahmadsefik463@gmail.com
