@@ -71,9 +71,19 @@ It is not used for advertising, not sold, and not read by people.
 
 ## Deleting your data
 
-- **More > Settings > Delete all my data** removes every transaction, account, setting and key from the phone.
-- Uninstalling JAIB removes everything too.
-- Disconnecting Gmail (Settings > Sources) revokes JAIB's access; you can also remove it at myaccount.google.com.
+JAIB has no account on any server: signing in with Google only lets JAIB read your bank and wallet emails on your
+phone. To delete everything:
+
+1. **In JAIB: More > Settings > Delete all my data.** This removes every transaction, account, setting and key from
+   the phone. Uninstalling JAIB does the same.
+2. **Remove JAIB's access to your Google account**: More > Settings > Sources > Disconnect this Gmail in JAIB, or
+   myaccount.google.com > Security > Your connections to third-party apps & services > JAIB > Delete all connections.
+3. **Backups and the second-phone link in your Google Drive**, if you turned them on: in Google Drive on the web,
+   Settings > Manage apps > JAIB > Options > Delete hidden app data.
+4. **Reports or diagnostics you emailed to the JAIB team**: write to ahmadsefik463@gmail.com and ask for them to be
+   deleted; they are deleted within 30 days.
+
+JAIB keeps nothing else about you anywhere.
 
 ## Contact
 
