@@ -4,7 +4,7 @@ title: JAIB privacy policy
 
 # JAIB privacy policy
 
-Last updated: 17 October 2026 (beta).
+Last updated: 23 October 2026 (beta).
 
 ## In short
 
@@ -13,15 +13,19 @@ money leaves the phone unless you choose to send or save it somewhere.
 
 ## What JAIB reads
 
-- **Bank and wallet notifications**, only from the apps on JAIB's list (banks, wallets, shops and email apps), after you
-  turn on notification access. Notifications from every other app are ignored the moment they arrive and never stored.
-  Chats, one-time passwords (OTPs) and promotions from listed apps are read in memory and dropped (of a promotion
-  from a bank or wallet app, only a template is kept for 7 days; see below).
+- **Payment alerts as they arrive**, only from the apps on JAIB's list (banks, wallets, shops, and your messages and
+  email apps), after you turn on notification access. Notifications from every other app are ignored the moment they
+  arrive and never stored. Chats, one-time passwords (OTPs) and promotions from listed apps are read in memory and
+  dropped (of a promotion from a bank or wallet app, only a template is kept for 7 days; see below).
+- **Bank texts** are read this way too: JAIB reads the alert your messages app shows when a bank or wallet texts you.
+  JAIB has no permission to read your SMS and never opens your messages app or its inbox, so texts from people are
+  never read.
 - **Gmail, if you connect it (optional), for each address you connect.** JAIB asks Gmail only for emails from the
-  banks and wallets on its list, with read-only access, and reads them on your phone. Emails from before you connected are not counted as transactions;
-  JAIB only learns from them which accounts you have. Nothing from these emails leaves the phone unless you send a
-  report yourself (see below).
-- **Files you pick**: an SMS backup you import, a JAIB backup you restore.
+  senders on its list: banks, wallets, and the shops and services that send payment receipts. It never asks for the
+  rest of your mail. Access is read-only and the emails are read on your phone. Emails from before you connected are
+  not counted as transactions; JAIB only learns from them which accounts you have. Nothing from these emails leaves
+  the phone unless you send a report yourself (see below).
+- **Files you pick**: a JAIB backup you restore.
 - **What you type to the JAIB Assistant (optional)**: it is understood by a model that runs on your phone. What you
   type, and the Assistant's answers, never leave the phone.
 
