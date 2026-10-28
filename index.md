@@ -4,7 +4,7 @@ title: JAIB privacy policy
 
 # JAIB privacy policy
 
-Last updated: 23 October 2026 (beta).
+Last updated: 28 October 2026 (beta).
 
 ## In short
 
@@ -19,10 +19,14 @@ money leaves the phone unless you choose to send or save it somewhere.
   dropped (of a promotion from a bank or wallet app, only a template is kept for 7 days; see below).
 - **Bank texts** are read this way too: JAIB reads the alert your messages app shows when a bank or wallet texts you.
   JAIB has no permission to read your SMS and never opens your messages app or its inbox, so texts from people are
-  never read.
+  never stored.
+- **Your SMS app, if it is not on the list and you say yes.** If your bank texts arrive in another SMS app, such as
+  Truecaller, JAIB names that app and asks before reading its notifications. It reads them the same way: it keeps the
+  payments, and chats and everything else are read on the phone and dropped at once. You can say "Not now", and JAIB
+  does not ask again.
 - **Gmail, if you connect it (optional), for each address you connect.** JAIB asks Gmail only for emails from the
-  senders on its list: banks, wallets, and the shops and services that send payment receipts. It never asks for the
-  rest of your mail. Access is read-only and the emails are read on your phone. Emails from before you connected are
+  senders on its list: banks, wallets, and the shops and services that send payment receipts, in your inbox and in
+  Spam (so an alert Gmail filed as spam is not missed; never the bin). It never asks for the rest of your mail. Access is read-only and the emails are read on your phone. Emails from before you connected are
   not counted as transactions; JAIB only learns from them which accounts you have. Nothing from these emails leaves
   the phone unless you send a report yourself (see below).
 - **Files you pick**: a JAIB backup you restore.
@@ -33,8 +37,8 @@ money leaves the phone unless you choose to send or save it somewhere.
 
 - What it read from each money message: amount, date, account, reference, the other side's name, and category.
 - The text of a message for 7 days (so you can check it), then only its fingerprint (a hash), never the text.
-- For a message from a bank or wallet app that JAIB did not count (a promotion, a notice, or one it could not read), a
-  template of it for 7 days (every name, amount, number and address replaced), so you can send it to help JAIB learn.
+- For a message from a bank or wallet app, or an email from a bank, wallet or payment service, that JAIB did not count
+  (a promotion, a notice, or one it could not read), a template of it for 7 days (every name, amount, number and address replaced), so you can send it to help JAIB learn.
   Never the message itself, never chats or one-time passwords.
 - Your accounts, balances, categories, rules and settings.
 - If you turn on "Help improve the Assistant" (off unless you turn it on): each request you typed, what the Assistant
