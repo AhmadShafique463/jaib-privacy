@@ -4,7 +4,7 @@ title: JAIB privacy policy
 
 # JAIB privacy policy
 
-Last updated: 29 October 2026 (beta).
+Last updated: 30 October 2026 (beta).
 
 ## In short
 
@@ -59,7 +59,8 @@ money leaves the phone unless you choose to send or save it somewhere.
     deletes each file once read. Scanning the link code uses Google's code scanner, which may send Google usage counts
     for the scanner (never the code);
   - send a "wrong result" report or diagnostics (which include how far you got setting up JAIB, as days since
-    install) from your own email app, to the JAIB team (ahmadsefik463@gmail.com).
+    install, and how many balances JAIB's weekly self-check corrected, as a count) from your own email app, to the
+    JAIB team (ahmadsefik463@gmail.com).
     You see exactly what is sent first and can untick any message. Messages, including bank and wallet emails JAIB
     read from your Gmail, are sent only as templates: the bank's
     wording with every name, amount, reference, account number, phone number, date, email and street address
