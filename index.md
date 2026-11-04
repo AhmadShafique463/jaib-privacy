@@ -4,12 +4,13 @@ title: JAIB privacy policy
 
 # JAIB privacy policy
 
-Last updated: 30 October 2026 (beta).
+Last updated: 3 November 2026 (beta).
 
 ## In short
 
-JAIB keeps your money picture on your phone, encrypted. There is no JAIB account and no JAIB server. Nothing about your
-money leaves the phone unless you choose to send or save it somewhere.
+JAIB keeps your money picture on your phone, encrypted. There is no JAIB account. Nothing about your money leaves the
+phone unless you choose to send or save it somewhere. JAIB's own small server is used only to check which plan you have
+(see "Your plan"), and the free plan shows a few ads from Google (see "Ads").
 
 ## What JAIB reads
 
@@ -23,9 +24,12 @@ money leaves the phone unless you choose to send or save it somewhere.
 - **Your SMS app, if it is not on the list and you say yes.** If your bank texts arrive in another SMS app, such as
   Truecaller, JAIB names that app and asks before reading its notifications. It reads them the same way: it keeps the
   payments, and chats and everything else are read on the phone and dropped at once. You can say "Not now", and JAIB
-  does not ask again.
+  does not ask again. If you said yes, you can change your mind at any time: Sources lists the SMS app with "Stop
+  reading", and JAIB stops reading it at once and does not ask again.
 - **Gmail, if you connect it (optional), for each address you connect.** JAIB asks Gmail only for emails from the
-  senders on its list: banks, wallets, and the shops and services that send payment receipts, in your inbox and in
+  senders on its list: banks, wallets, and the shops and services that send payment receipts, and any sender you add
+  yourself in Sources > Senders you add (an email address or a domain, never a whole public mail domain such as
+  gmail.com; remove it there to stop), in your inbox and in
   Spam (so an alert Gmail filed as spam is not missed; never the bin). It never asks for the rest of your mail. Access is read-only and the emails are read on your phone. Emails from before you connected are
   not counted as transactions; JAIB only learns from them which accounts you have. Nothing from these emails leaves
   the phone unless you send a report yourself (see below).
@@ -37,7 +41,8 @@ money leaves the phone unless you choose to send or save it somewhere.
 
 - What it read from each money message: amount, date, account, reference, the other side's name, and category.
 - The text of a message for 7 days (so you can check it), then only its fingerprint (a hash), never the text.
-- For a message from a bank or wallet app, or an email from a bank, wallet or payment service, that JAIB did not count
+- For a message from a bank or wallet app, or an email from a bank, wallet or payment service or from a sender you
+  added, that JAIB did not count
   (a promotion, a notice, or one it could not read), a template of it for 7 days (every name, amount, number and address replaced), so you can send it to help JAIB learn.
   Never the message itself, never chats or one-time passwords.
 - Your accounts, balances, categories, rules and settings.
@@ -56,8 +61,9 @@ money leaves the phone unless you choose to send or save it somewhere.
   - if you link a second phone: what that phone read from each payment alert (amount, account, reference, the other
     side, the alert's wording with names and numbers replaced), encrypted on the phone with a key only your two phones
     have, through a hidden JAIB folder in your own Google Drive. Google stores it but cannot read it; the main phone
-    deletes each file once read. Scanning the link code uses Google's code scanner, which may send Google usage counts
-    for the scanner (never the code);
+    deletes each file once read. Scanning the link code uses Google's code scanner, which sends Google diagnostics and
+    usage for the scanner and device information such as the phone's maker, model and Android version (never the
+    code; Google does not pass it on), declared in Play's Data safety form;
   - send a "wrong result" report or diagnostics (which include how far you got setting up JAIB, as days since
     install, and how many balances JAIB's weekly self-check corrected, as a count) from your own email app, to the
     JAIB team (ahmadsefik463@gmail.com).
@@ -71,8 +77,40 @@ money leaves the phone unless you choose to send or save it somewhere.
   huggingface.co). The request is the same for everyone and carries nothing about you or your money.
 - **Exchange rates**: once a day JAIB downloads public currency rates (fawazahmed0/exchange-api through jsDelivr or
   Cloudflare). The request is the same for everyone and carries nothing about you or your money.
+- **Your plan** (see below): a random install number, a few risk signals and, after a purchase, Google Play's purchase
+  token, to JAIB's plan server.
+- **Ads** (see below): on the free plan, Google's ad library.
 - **Google**: Gmail sign-in and access go through Google; Play may count crashes for users who share usage data with
   developers. JAIB has no analytics or crash SDK.
+
+## Your plan (subscriptions)
+
+JAIB's plans (Hisaab and Khazana, monthly) are sold by Google Play: Google takes the payment, and JAIB never sees your
+card or bank details. To know which plan you have, the app asks JAIB's own small server (on Cloudflare), which checks
+the purchase with Google and sends back a signed answer. Each check sends only:
+
+- a random number JAIB made for this install (not your phone's or Google account's ID; a new one after a reinstall or
+  "Delete all my data");
+- after a purchase or "Restore purchases", Google Play's purchase token;
+- a few risk signals, as short codes, so a tampered app cannot unlock paid features: whether a debugger is attached,
+  whether USB debugging or developer options are on, whether the app was repackaged, whether it was installed from
+  outside Google Play, and whether the plan answer saved on the phone was edited. They never block you; a phone with
+  them is simply checked again sooner.
+
+The server keeps, for each purchase, the token, the install number it belongs to, the plan and when it ends, and a log
+of checks (time, install number, the result and any risk codes). It never receives anything about your money, your
+messages or your accounts. The log is deleted after 90 days, and each purchase record 90 days after the subscription
+ends. In the beta everyone has Bunyaad, so no purchase is involved.
+
+## Ads
+
+On the free plan (and, during the beta, as Google's test ads, so testers can check them), JAIB shows a few ads from
+Google AdMob among your own items: about one after every three. They are non-personalised: JAIB asks Google not to use
+a profile of you, and removes the advertising ID permission. To show and count an ad, Google's ad library collects
+information such as your phone's model and system, approximate location from your internet address, and how you
+interact with the ad, as described in [Google's partner policy](https://policies.google.com/technologies/partner-sites).
+It never gets your money data, messages or accounts. Paid plans have no ads, and the ad library never starts for
+them.
 
 ## Google API Services User Data Policy (Limited Use)
 
@@ -87,7 +125,8 @@ anyone else, and not used to train AI models.
 ## Deleting your data
 
 JAIB has no account on any server: signing in with Google only lets JAIB read your bank and wallet emails on your
-phone. To delete everything:
+phone. JAIB's plan server keeps no money data; its records are deleted on their own (see "Your plan"). To delete
+everything:
 
 1. **In JAIB: More > Settings > Delete all my data.** This removes every transaction, account, setting and key from
    the phone, unlinks your other phones, and, if you tick "Also delete my backups in Google Drive", deletes JAIB's
@@ -98,6 +137,9 @@ phone. To delete everything:
    in Google Drive on the web, Settings > Manage apps > JAIB > Options > Delete hidden app data.
 4. **Reports or diagnostics you emailed to the JAIB team**: write to ahmadsefik463@gmail.com and ask for them to be
    deleted; they are deleted within 30 days.
+
+5. **JAIB's plan server**: it holds only your install number, purchase token and check log, deleted on their own
+   after 90 days (or 90 days after a subscription ends). To have them deleted sooner, write to ahmadsefik463@gmail.com.
 
 JAIB keeps nothing else about you anywhere.
 
