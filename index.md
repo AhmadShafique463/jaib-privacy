@@ -4,7 +4,7 @@ title: JAIB privacy policy
 
 # JAIB privacy policy
 
-Last updated: 3 November 2026 (beta).
+Last updated: 5 November 2026 (beta).
 
 ## In short
 
@@ -27,9 +27,10 @@ phone unless you choose to send or save it somewhere. JAIB's own small server is
   does not ask again. If you said yes, you can change your mind at any time: Sources lists the SMS app with "Stop
   reading", and JAIB stops reading it at once and does not ask again.
 - **Gmail, if you connect it (optional), for each address you connect.** JAIB asks Gmail only for emails from the
-  senders on its list: banks, wallets, and the shops and services that send payment receipts, and any sender you add
-  yourself in Sources > Senders you add (an email address or a domain, never a whole public mail domain such as
-  gmail.com; remove it there to stop), in your inbox and in
+  senders on its list: banks, wallets, the shops and services that send payment receipts, the utilities, phone and
+  internet companies and brokers that send bills and confirmations, and any sender you add yourself in Sources >
+  Senders you add (an email address or a domain, never a whole public mail domain such as gmail.com; remove it there
+  to stop), in your inbox and in
   Spam (so an alert Gmail filed as spam is not missed; never the bin). It never asks for the rest of your mail. Access is read-only and the emails are read on your phone. Emails from before you connected are
   not counted as transactions; JAIB only learns from them which accounts you have. Nothing from these emails leaves
   the phone unless you send a report yourself (see below).
@@ -45,11 +46,14 @@ phone unless you choose to send or save it somewhere. JAIB's own small server is
   added, that JAIB did not count
   (a promotion, a notice, or one it could not read), a template of it for 7 days (every name, amount, number and address replaced), so you can send it to help JAIB learn.
   Never the message itself, never chats or one-time passwords.
-- Your accounts, balances, categories, rules and settings.
+- Your accounts, balances, budgets, categories, rules and settings. A rule can look for words you choose in a new
+  message. That check happens on your phone as the message arrives; nothing is sent anywhere.
 - If you turn on "Help improve the Assistant" (off unless you turn it on): each request you typed, what the Assistant
   understood and what you saved, so you can export it yourself to help train the Assistant. It stays on the phone,
   encrypted, until you export or clear it.
 - Everything is encrypted on the phone with a key protected by Android's hardware keystore.
+- If you add a JAIB widget to your home screen, it shows your net worth or recent payments there, outside JAIB's lock, to
+  anyone who can see your screen. Hide amounts hides the figures. Remove the widget to stop.
 
 ## What leaves the phone
 
