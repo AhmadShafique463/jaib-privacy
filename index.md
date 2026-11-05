@@ -4,7 +4,7 @@ title: JAIB privacy policy
 
 # JAIB privacy policy
 
-Last updated: 5 November 2026 (beta).
+Last updated: 6 November 2026 (beta).
 
 ## In short
 
@@ -141,10 +141,10 @@ JAIB has no account on any server: signing in with Google only lets JAIB read yo
 phone. JAIB's plan server keeps no money data; its records are deleted on their own (see "Your plan"). To delete
 everything:
 
-1. **In JAIB: More > Settings > Delete all my data.** This removes every transaction, account, setting and key from
+1. **In JAIB: Menu > About > Delete all my data.** This removes every transaction, account, setting and key from
    the phone, unlinks your other phones, and, if you tick "Also delete my backups in Google Drive", deletes JAIB's
    backups there too; JAIB then says what it removed. Uninstalling JAIB removes what is on the phone only.
-2. **Remove JAIB's access to your Google account**: More > Settings > Sources > Disconnect this Gmail in JAIB, or
+2. **Remove JAIB's access to your Google account**: Menu > Sources > Disconnect this Gmail in JAIB, or
    myaccount.google.com > Security > Your connections to third-party apps & services > JAIB > Delete all connections.
 3. **Backups and the second-phone link in your Google Drive**, if you turned them on and did not tick the box above:
    in Google Drive on the web, Settings > Manage apps > JAIB > Options > Delete hidden app data.
