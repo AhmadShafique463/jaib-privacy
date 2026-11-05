@@ -16,7 +16,8 @@ phone unless you choose to send or save it somewhere. JAIB's own small server is
 
 - **Payment alerts as they arrive**, only from the apps on JAIB's list (banks, wallets, shops, and your messages and
   email apps), after you turn on notification access. Notifications from every other app are ignored the moment they
-  arrive and never stored. Chats, one-time passwords (OTPs) and promotions from listed apps are read in memory and
+  arrive: JAIB never reads or stores what they say. It keeps only the app's name for 7 days, on your phone, so you can
+  choose to add it (below); for chat and phone apps it does not keep even that. Chats, one-time passwords (OTPs) and promotions from listed apps are read in memory and
   dropped (of a promotion from a bank or wallet app, only a template is kept for 7 days; see below).
 - **Bank texts** are read this way too: JAIB reads the alert your messages app shows when a bank or wallet texts you.
   JAIB has no permission to read your SMS and never opens your messages app or its inbox, so texts from people are
@@ -26,6 +27,12 @@ phone unless you choose to send or save it somewhere. JAIB's own small server is
   payments, and chats and everything else are read on the phone and dropped at once. You can say "Not now", and JAIB
   does not ask again. If you said yes, you can change your mind at any time: Sources lists the SMS app with "Stop
   reading", and JAIB stops reading it at once and does not ask again.
+- **Other apps, if you switch them on.** In Sources > Apps JAIB reads you can switch on any app that posted a notification
+  this week, if it sends you payment alerts. JAIB reads it the same way as your SMS app: it keeps the payments, and chats,
+  one-time passwords and everything else are read on the phone and dropped at once. Chat and phone apps, such as WhatsApp,
+  can never be switched on. Switch an app off to stop at once; payments already recorded stay.
+- **A message you paste or share to JAIB.** It is read on the phone and waits in your Review Inbox for you to check. JAIB
+  never adds it by itself.
 - **Gmail, if you connect it (optional), for each address you connect.** JAIB asks Gmail only for emails from the
   senders on its list: banks, wallets, the shops and services that send payment receipts, the utilities, phone and
   internet companies and brokers that send bills and confirmations, and any sender you add yourself in Sources >
@@ -46,7 +53,9 @@ phone unless you choose to send or save it somewhere. JAIB's own small server is
   added, that JAIB did not count
   (a promotion, a notice, or one it could not read), a template of it for 7 days (every name, amount, number and address replaced), so you can send it to help JAIB learn.
   Never the message itself, never chats or one-time passwords.
-- Your accounts, balances, budgets, categories, rules and settings. A rule can look for words you choose in a new
+- The names of other apps that posted a notification in the last 7 days, and the apps you switched on. These stay on the
+  phone: they are in no backup, report or diagnostics.
+- Your accounts, balances, budgets, savings goals, bills and subscriptions, categories, rules and settings. A rule can look for words you choose in a new
   message. That check happens on your phone as the message arrives; nothing is sent anywhere.
 - If you turn on "Help improve the Assistant" (off unless you turn it on): each request you typed, what the Assistant
   understood and what you saved, so you can export it yourself to help train the Assistant. It stays on the phone,
